@@ -1,0 +1,32 @@
+.social_media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.social_media .icon a {
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+}
+
+.social_media .icon a svg {
+  border-left: 1px solid white;
+  border-radius: 8px;
+  padding: 0.2rem;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.social_media .icon a svg:hover {
+  color: var(--main-color);
+  scale: 1.1;
+}

@@ -1,0 +1,18 @@
+.footer {
+  height: 15vh;
+  width: 200vw;
+  max-width: 100%;
+  padding: 1rem;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer p {
+  color: var(--second-color);
+  padding-top: 1rem;
+  font: 400 1rem "Ubuntu";
+}

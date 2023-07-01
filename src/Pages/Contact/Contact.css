@@ -1,0 +1,85 @@
+#contact {
+  height: 70vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+  height: 90%;
+  gap: 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  z-index: 555555 !important;
+  flex-wrap: wrap;
+}
+form h2 {
+  color: var(--main-color);
+  margin-bottom: 3rem;
+  font: 500 2rem "Ubuntu";
+}
+.boxin form {
+  background: var(--second-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+}
+.boxin form .input {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-color);
+}
+.boxin form .input input,
+textarea {
+  width: 20rem !important;
+  padding: 1rem 4rem;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.boxin .image {
+  height: 100%;
+  width: 50%;
+}
+.boxin .input label {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+.boxin .image img {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+.boxin .input input:focus,
+textarea:focus {
+  background: var(--main-color);
+  color: var(--second-color);
+}
+
+@media screen and (max-width: 700px) {
+  .image {
+    display: none;
+  }
+  form {
+    width: 100% !important;
+  }
+}

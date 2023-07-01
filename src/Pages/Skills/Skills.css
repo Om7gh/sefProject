@@ -1,0 +1,229 @@
+.skills {
+  height: 60vh;
+  width: 85vw;
+  max-width: 100%;
+  padding: 3rem;
+  margin: -5rem auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(to right, #000 50%, var(--main-color));
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+}
+.skills h2 {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  position: relative;
+  width: fit-content;
+  color: white;
+  padding: 1rem;
+}
+
+.skills h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-top: 5px solid var(--main-color);
+  border-left: 5px solid var(--main-color);
+}
+.skills h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-bottom: 5px solid var(--main-color);
+  border-right: 5px solid var(--main-color);
+}
+
+.box {
+  background-color: #34343a;
+  height: 20rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 55rem;
+  gap: 3rem;
+  padding: 1rem 2rem;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.small_box {
+  height: 80%;
+  width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: space-evenly;
+  background: #333;
+}
+
+.small_box .cercle {
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+  position: relative;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  z-index: 98;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(60, 60, 60, 0.5);
+  position: relative;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 15px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anime 2s linear forwards;
+  -webkit-animation: anime 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+}
+
+@keyframes anime {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+.cercle:after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  z-index: 99;
+  background: #34343a;
+}
+.small_box h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.container p {
+  color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  z-index: 100;
+}
+.arrow {
+  position: absolute;
+}
+
+.arrow svg {
+  font-size: 3rem;
+  z-index: 5555555555 !important;
+  cursor: pointer;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+
+.right {
+  right: 16%;
+  color: #000;
+}
+.left {
+  left: 12% !important;
+  color: var(--main-color);
+}
+
+.arrow svg:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 754px) {
+  .skills {
+    width: 90vw;
+    height: 60vh;
+    margin: -3rem auto;
+  }
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+  .box {
+    width: 80vw;
+  }
+  .cercle:after {
+    display: none;
+  }
+  .small_box {
+    min-width: 40%;
+    margin: auto;
+  }
+  .small_box .cercle {
+    width: 85%;
+    height: 30%;
+    background: transparent;
+    box-shadow: 0 0 0 transparent;
+  }
+
+  .small_box h3 {
+    font-size: 0.9rem;
+  }
+
+  .arrow svg {
+    font-size: 2rem;
+  }
+
+  .right {
+    right: 13%;
+  }
+  .left {
+    left: -10%;
+  }
+
+  circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 372;
+    animation: anime 2s linear forwards;
+    -webkit-animation: anime 2s linear forwards;
+  }
+
+  svg {
+    position: absolute;
+  }
+}
